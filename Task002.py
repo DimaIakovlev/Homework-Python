@@ -5,6 +5,7 @@
 
 a = int(input('Введите трехзначное число \nа= '))
 result = 0
-if a !=0 :
-
-print (a)
+while (a != 0) :
+    result = result + a % 10
+    a //= 10
+print ('Сумма чисел в составе числа a = ', result)
