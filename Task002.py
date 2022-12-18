@@ -2,7 +2,8 @@
 # Пример:
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
-
+import os
+os.system('cls||clear')
 a = int(input('Введите трехзначное число \nа= '))
 result = 0
 while (a != 0) :

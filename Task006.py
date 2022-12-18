@@ -4,7 +4,8 @@
 # Пример:
 # 385916 -> yes
 # 123456 -> no
-
+import os
+os.system('cls||clear')
 a = int(input('Введите номер вашего билета \nа= '))
 if len(str(a)) == 6:
     sum1 = 0
