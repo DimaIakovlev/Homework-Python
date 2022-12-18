@@ -6,5 +6,20 @@
 # 123456 -> no
 
 a = int(input('Введите номер вашего билета \nа= '))
-digits = len(a)
-print(digits)
+if len(str(a)) == 6:
+    sum1 = 0
+    sum2 = 0
+    i = 0
+    while i != 3:
+        sum1 = sum1 + a % 10
+        a //= 10
+        i+=1
+    while i != 6:
+        sum2 = sum2 + a % 10
+        a //= 10
+        i+=1
+    if (sum1 == sum2):
+        print ('У вас счастливый билет')
+    else:
+        print ('У вас НЕ счастливый билет')
+else : print ('Введено не корректное число')
